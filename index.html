@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Money - Your Comprehensive Fintech Partner | mycashmoney.in</title>
+    <meta name="description" content="Leading fintech solution provider offering comprehensive digital financial services including travel bookings, lending solutions, insurance services, mobile recharge, BBPS, DMT, AEPS across India">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2 class="nav__logo">💰 Cash Money</h2>
+                <span class="nav__tagline">Your Comprehensive Fintech Partner</span>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#travel-services" class="nav__link">Travel & Bookings</a></li>
+                <li><a href="#lending-services" class="nav__link">Lending</a></li>
+                <li><a href="#insurance-services" class="nav__link">Insurance</a></li>
+                <li><a href="#user-roles" class="nav__link">User Roles</a></li>
+                <li><a href="#registration" class="nav__link" onclick="showRegistrationModal()">Registration</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="btn btn--outline" onclick="showLoginModal()">Login</button>
+                <button class="btn btn--primary" onclick="showRegistrationModal()">Register Now</button>
+            </div>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">Revolutionary Multi-Service Fintech Platform</h1>
+                    <p class="hero__subtitle">Empowering B2B, B2C, and Reseller segments with comprehensive digital financial services, travel bookings, lending solutions, and insurance services. Build your complete fintech empire with our advanced platform technology.</p>
+                    <div class="hero__services-preview">
+                        <span class="service-tag">💳 Financial Services</span>
+                        <span class="service-tag">✈️ Travel Bookings</span>
+                        <span class="service-tag">💰 Lending Solutions</span>
+                        <span class="service-tag">🛡️ Insurance Services</span>
+                    </div>
+                    <div class="hero__actions">
+                        <button class="btn btn--primary btn--lg" onclick="showRegistrationModal()">Start Your Journey</button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToSection('services')">Explore 14+ Services</button>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <strong>14+</strong>
+                            <span>Services</span>
+                        </div>
+                        <div class="stat">
+                            <strong>₹100+ Cr</strong>
+                            <span>Monthly Volume</span>
+                        </div>
+                        <div class="stat">
+                            <strong>4</strong>
+                            <span>Service Categories</span>
+                        </div>
+                        <div class="stat">
+                            <strong>99.9%</strong>
+                            <span>Uptime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__card">
+                        <h3>🔐 RBI Compliant</h3>
+                        <p>Fully compliant with RBI guidelines and IRCTC authorized</p>
+                    </div>
+                    <div class="hero__card">
+                        <h3>⚡ Multi-Service Platform</h3>
+                        <p>Financial, travel, lending, and insurance services in one platform</p>
+                    </div>
+                    <div class="hero__card">
+                        <h3>🛡️ Enterprise Security</h3>
+                        <p>256-bit SSL encryption with advanced fraud detection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Overview -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Complete Service Portfolio</h2>
+                <p class="section__subtitle">Four comprehensive service categories to power your business growth</p>
+            </div>
+            <div class="categories__grid">
+                <div class="category__card" style="border-left-color: #20B2AA;">
+                    <div class="category__icon">💳</div>
+                    <h3>Financial Services</h3>
+                    <p>Core fintech services including payments, transfers, and digital banking solutions</p>
+                    <div class="category__count">6 Services</div>
+                </div>
+                <div class="category__card" style="border-left-color: #FFD700;">
+                    <div class="category__icon">✈️</div>
+                    <h3>Travel Services</h3>
+                    <p>Comprehensive travel booking solutions for air, rail, bus, and hotel reservations</p>
+                    <div class="category__count">3 Services</div>
+                </div>
+                <div class="category__card" style="border-left-color: #1B365D;">
+                    <div class="category__icon">💰</div>
+                    <h3>Lending Services</h3>
+                    <p>Digital lending solutions through partnerships with regulated NBFCs and banks</p>
+                    <div class="category__count">2 Services</div>
+                </div>
+                <div class="category__card" style="border-left-color: #FF6B6B;">
+                    <div class="category__icon">🛡️</div>
+                    <h3>Insurance Services</h3>
+                    <p>Comprehensive insurance products from life to motor insurance with leading insurers</p>
+                    <div class="category__count">3 Services</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Financial Services</h2>
+                <p class="section__subtitle">Core fintech solutions designed to power your business growth</p>
+            </div>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__icon">📱</div>
+                    <h3 class="service__title">Mobile & DTH Recharge</h3>
+                    <p class="service__description">Instant recharge services for all mobile operators and DTH providers across India</p>
+                    <div class="service__commission">Commission: Up to 5%</div>
+                    <ul class="service__features">
+                        <li>All operators supported</li>
+                        <li>Instant processing</li>
+                        <li>API integration available</li>
+                    </ul>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">🧾</div>
+                    <h3 class="service__title">BBPS Bill Payments</h3>
+                    <p class="service__description">Comprehensive bill payment solutions for electricity, gas, water, and other utilities</p>
+                    <div class="service__commission">Commission: Up to 3%</div>
+                    <ul class="service__features">
+                        <li>1000+ billers supported</li>
+                        <li>Real-time confirmation</li>
+                        <li>Bulk payment options</li>
+                    </ul>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">💸</div>
+                    <h3 class="service__title">DMT Money Transfer</h3>
+                    <p class="service__description">Secure domestic money transfer services with real-time processing</p>
+                    <div class="service__commission">Commission: Up to 0.5%</div>
+                    <ul class="service__features">
+                        <li>IMPS/NEFT transfers</li>
+                        <li>Bank verification</li>
+                        <li>Multi-beneficiary support</li>
+                    </ul>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">👆</div>
+                    <h3 class="service__title">AEPS Services</h3>
+                    <p class="service__description">Aadhaar-enabled payment system for cash withdrawal and balance inquiry</p>
+                    <div class="service__commission">Commission: Up to ₹15 per transaction</div>
+                    <ul class="service__features">
+                        <li>Cash withdrawal</li>
+                        <li>Balance inquiry</li>
+                        <li>Mini statement</li>
+                    </ul>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">📄</div>
+                    <h3 class="service__title">UPI Collection</h3>
+                    <p class="service__description">Digital payment collection through UPI QR codes and payment links</p>
+                    <div class="service__commission">Commission: Per transaction fee</div>
+                    <ul class="service__features">
+                        <li>Dynamic QR generation</li>
+                        <li>Payment link creation</li>
+                        <li>Auto settlement</li>
+                    </ul>
+                </div>
+                <div class="service__card">
+                    <div class="service__icon">💳</div>
+                    <h3 class="service__title">Payout Services</h3>
+                    <p class="service__description">Bulk payout solutions for businesses with API integration support</p>
+                    <div class="service__commission">Commission: Volume-based pricing</div>
+                    <ul class="service__features">
+                        <li>Bulk payouts</li>
+                        <li>API integration</li>
+                        <li>Status tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Services Section -->
+    <section id="travel-services" class="travel-services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Travel & Booking Services</h2>
+                <p class="section__subtitle">Comprehensive travel booking solutions with competitive rates and instant confirmation</p>
+            </div>
+            <div class="travel__highlight">
+                <div class="highlight__badge">
+                    <span class="cert">🚂 IRCTC Authorized Partner</span>
+                    <span class="cert">✈️ Major Airlines Partner</span>
+                    <span class="cert">🚌 Pan-India Coverage</span>
+                </div>
+            </div>
+            <div class="services__grid">
+                <div class="service__card service__card--travel">
+                    <div class="service__icon">✈️</div>
+                    <h3 class="service__title">Air Ticket Booking</h3>
+                    <p class="service__description">Domestic and international flight bookings with competitive rates and instant confirmation</p>
+                    <div class="service__commission">Commission: Up to ₹300 per ticket</div>
+                    <ul class="service__features">
+                        <li>Domestic & International flights</li>
+                        <li>Instant booking confirmation</li>
+                        <li>Competitive pricing</li>
+                        <li>24/7 customer support</li>
+                    </ul>
+                </div>
+                <div class="service__card service__card--travel">
+                    <div class="service__icon">🚂</div>
+                    <h3 class="service__title">Train Ticket Booking</h3>
+                    <p class="service__description">IRCTC authorized partner for railway reservations including Tatkal and premium bookings</p>
+                    <div class="service__commission">Commission: Up to ₹20 per ticket</div>
+                    <ul class="service__features">
+                        <li>IRCTC authorized booking</li>
+                        <li>Tatkal booking available</li>
+                        <li>All train routes covered</li>
+                        <li>Real-time seat availability</li>
+                    </ul>
+                </div>
+                <div class="service__card service__card--travel">
+                    <div class="service__icon">🚌</div>
+                    <h3 class="service__title">Bus Ticket Booking</h3>
+                    <p class="service__description">Comprehensive bus booking across all major routes in India with various operators</p>
+                    <div class="service__commission">Commission: Up to ₹50 per ticket</div>
+                    <ul class="service__features">
+                        <li>Pan-India route coverage</li>
+                        <li>Multiple bus operators</li>
+                        <li>Seat selection available</li>
+                        <li>Live bus tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lending Services Section -->
+    <section id="lending-services" class="lending-services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Lending Services</h2>
+                <p class="section__subtitle">Digital lending solutions through partnerships with verified and regulated lending institutions</p>
+            </div>
+            <div class="lending__features">
+                <div class="feature__highlight">
+                    <div class="feature__icon">🏛️</div>
+                    <h4>Regulated Partners</h4>
+                    <p>All lending partners are RBI regulated NBFCs and banks</p>
+                </div>
+                <div class="feature__highlight">
+                    <div class="feature__icon">⚡</div>
+                    <h4>Quick Approval</h4>
+                    <p>AI-powered credit scoring for instant loan processing</p>
+                </div>
+                <div class="feature__highlight">
+                    <div class="feature__icon">📱</div>
+                    <h4>Digital KYC</h4>
+                    <p>Minimal documentation with digital verification</p>
+                </div>
+            </div>
+            <div class="services__grid">
+                <div class="service__card service__card--lending">
+                    <div class="service__icon">💰</div>
+                    <h3 class="service__title">Personal Loans</h3>
+                    <p class="service__description">Quick approval personal loans through verified lending partners with competitive interest rates</p>
+                    <div class="service__commission">Commission: Up to 2% of loan amount</div>
+                    <ul class="service__features">
+                        <li>Loan amount: ₹10,000 - ₹10,00,000</li>
+                        <li>Interest rates starting 10.49%</li>
+                        <li>Instant approval in minutes</li>
+                        <li>Flexible repayment options</li>
+                    </ul>
+                </div>
+                <div class="service__card service__card--lending">
+                    <div class="service__icon">🏢</div>
+                    <h3 class="service__title">Business Loans</h3>
+                    <p class="service__description">SME lending solutions for small businesses with flexible repayment options</p>
+                    <div class="service__commission">Commission: Up to 1.5% of loan amount</div>
+                    <ul class="service__features">
+                        <li>Loan amount: ₹50,000 - ₹50,00,000</li>
+                        <li>Working capital solutions</li>
+                        <li>Equipment financing</li>
+                        <li>Minimal collateral required</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Services Section -->
+    <section id="insurance-services" class="insurance-services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Insurance Services</h2>
+                <p class="section__subtitle">Comprehensive insurance products from leading insurance companies with instant policy issuance</p>
+            </div>
+            <div class="insurance__partners">
+                <h4>Our Insurance Partners</h4>
+                <div class="partners__list">
+                    <span class="partner__badge">Life Insurance Companies</span>
+                    <span class="partner__badge">General Insurance Companies</span>
+                    <span class="partner__badge">Health Insurance Providers</span>
+                    <span class="partner__badge">Motor Insurance Specialists</span>
+                </div>
+            </div>
+            <div class="services__grid">
+                <div class="service__card service__card--insurance">
+                    <div class="service__icon">🛡️</div>
+                    <h3 class="service__title">Life Insurance</h3>
+                    <p class="service__description">Term and whole life insurance policies from leading insurance companies</p>
+                    <div class="service__commission">Commission: Up to 25% first year premium</div>
+                    <ul class="service__features">
+                        <li>Term life insurance</li>
+                        <li>Whole life policies</li>
+                        <li>ULIP investments</li>
+                        <li>Online policy issuance</li>
+                    </ul>
+                </div>
+                <div class="service__card service__card--insurance">
+                    <div class="service__icon">❤️</div>
+                    <h3 class="service__title">Health Insurance</h3>
+                    <p class="service__description">Individual and family health coverage with cashless claim facilities</p>
+                    <div class="service__commission">Commission: Up to 20% of premium</div>
+                    <ul class="service__features">
+                        <li>Individual & family floater</li>
+                        <li>Cashless claims network</li>
+                        <li>Critical illness coverage</li>
+                        <li>Pre & post hospitalization</li>
+                    </ul>
+                </div>
+                <div class="service__card service__card--insurance">
+                    <div class="service__icon">🚗</div>
+                    <h3 class="service__title">Motor Insurance</h3>
+                    <p class="service__description">Vehicle insurance with instant policy issuance and online claims support</p>
+                    <div class="service__commission">Commission: Up to 15% of premium</div>
+                    <ul class="service__features">
+                        <li>Two-wheeler & four-wheeler</li>
+                        <li>Comprehensive & third-party</li>
+                        <li>Instant policy generation</li>
+                        <li>Online claim support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Roles Section -->
+    <section id="user-roles" class="roles">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">User Roles & Access Levels</h2>
+                <p class="section__subtitle">Choose the perfect role that matches your business requirements across all service categories</p>
+            </div>
+            <div class="roles__grid">
+                <div class="role__card role__card--premium">
+                    <div class="role__header">
+                        <h3 class="role__title">👑 Super Admin</h3>
+                        <p class="role__subtitle">Complete System Control</p>
+                    </div>
+                    <p class="role__description">Complete system control and management with access to all service categories and configurations</p>
+                    <ul class="role__features">
+                        <li>All Service Categories</li>
+                        <li>User Management</li>
+                        <li>Financial Controls</li>
+                        <li>Reporting & Analytics</li>
+                        <li>Commission Management</li>
+                        <li>Partner Management</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width" onclick="selectRole('Super Admin')">Choose Role</button>
+                </div>
+                <div class="role__card">
+                    <div class="role__header">
+                        <h3 class="role__title">⚙️ Admin</h3>
+                        <p class="role__subtitle">System Administration</p>
+                    </div>
+                    <p class="role__description">System administration and user management with operational oversight across all services</p>
+                    <ul class="role__features">
+                        <li>Multi-Service Management</li>
+                        <li>Transaction Monitoring</li>
+                        <li>Support Management</li>
+                        <li>Cross-Service Reporting</li>
+                        <li>Role Assignments</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width" onclick="selectRole('Admin')">Choose Role</button>
+                </div>
+                <div class="role__card">
+                    <div class="role__header">
+                        <h3 class="role__title">🏷️ White Label</h3>
+                        <p class="role__subtitle">Custom Branding</p>
+                    </div>
+                    <p class="role__description">Custom branding solutions with sub-distributor management across all service verticals</p>
+                    <ul class="role__features">
+                        <li>Brand Customization</li>
+                        <li>Multi-Service Access</li>
+                        <li>Sub-distributor Management</li>
+                        <li>Commission Structure</li>
+                        <li>Custom Reports</li>
+                        <li>API Access</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width" onclick="selectRole('White Label')">Choose Role</button>
+                </div>
+                <div class="role__card">
+                    <div class="role__header">
+                        <h3 class="role__title">🏪 Distributors</h3>
+                        <p class="role__subtitle">Regional Network</p>
+                    </div>
+                    <p class="role__description">Regional distribution network with retailer management across financial, travel, lending, and insurance services</p>
+                    <ul class="role__features">
+                        <li>Retailer Management</li>
+                        <li>Multi-Category Commission</li>
+                        <li>Service Distribution</li>
+                        <li>Regional Reports</li>
+                        <li>Wallet Management</li>
+                        <li>Training Support</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width" onclick="selectRole('Distributors')">Choose Role</button>
+                </div>
+                <div class="role__card">
+                    <div class="role__header">
+                        <h3 class="role__title">🏬 Retailers</h3>
+                        <p class="role__subtitle">Customer Service</p>
+                    </div>
+                    <p class="role__description">Direct customer service interface with access to all activated service categories</p>
+                    <ul class="role__features">
+                        <li>Customer Service</li>
+                        <li>Multi-Service Processing</li>
+                        <li>Commission Tracking</li>
+                        <li>Cross-Service Sales</li>
+                        <li>Customer Management</li>
+                        <li>Support Access</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width" onclick="selectRole('Retailers')">Choose Role</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Why Choose Cash Money?</h2>
+                <p class="section__subtitle">Advanced features designed for modern multi-service fintech businesses</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">⚡</div>
+                    <h3>Real-time Processing</h3>
+                    <p>Lightning-fast transaction processing across all service categories with instant confirmations</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🎧</div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Round-the-clock support across all verticals with specialized teams for travel, lending, and insurance</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🔗</div>
+                    <h3>Secure API Integration</h3>
+                    <p>Robust APIs for travel, lending, and insurance with comprehensive documentation and testing environment</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">💰</div>
+                    <h3>Multi-level Commission</h3>
+                    <p>Flexible commission structures across all service categories with real-time tracking</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">📊</div>
+                    <h3>Cross-Service Analytics</h3>
+                    <p>Comprehensive reporting dashboard with cross-selling opportunities and performance insights</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🌐</div>
+                    <h3>Multi-Service Platform</h3>
+                    <p>Single platform access to financial, travel, lending, and insurance services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Security Section -->
+    <section class="security">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Trust & Security</h2>
+                <p class="section__subtitle">Comprehensive compliance across all service verticals</p>
+            </div>
+            <div class="security__grid">
+                <div class="security__badge">
+                    <div class="badge__icon">🏛️</div>
+                    <h4>RBI Guidelines Compliance</h4>
+                    <p>Fully compliant with Reserve Bank of India guidelines for financial services</p>
+                </div>
+                <div class="security__badge">
+                    <div class="badge__icon">🚂</div>
+                    <h4>IRCTC Authorized Partner</h4>
+                    <p>Official authorized partner for railway ticket bookings and reservations</p>
+                </div>
+                <div class="security__badge">
+                    <div class="badge__icon">🛡️</div>
+                    <h4>Insurance Regulatory Compliance</h4>
+                    <p>Compliant with IRDAI regulations for insurance product distribution</p>
+                </div>
+                <div class="security__badge">
+                    <div class="badge__icon">🏦</div>
+                    <h4>Lending Partner Agreements</h4>
+                    <p>Partnerships only with RBI regulated NBFCs and banks for lending services</p>
+                </div>
+                <div class="security__badge">
+                    <div class="badge__icon">🔒</div>
+                    <h4>Data Protection Compliance</h4>
+                    <p>Advanced encryption and secure data handling across all service categories</p>
+                </div>
+                <div class="security__badge">
+                    <div class="badge__icon">📋</div>
+                    <h4>KYC & AML Compliance</h4>
+                    <p>Comprehensive KYC verification and anti-money laundering compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Multi-Service Dashboard Preview</h2>
+                <p class="section__subtitle">Experience our comprehensive user interfaces across all service categories</p>
+            </div>
+            <div class="dashboard__tabs">
+                <button class="tab__button tab__button--active" onclick="showDashboard('superadmin')">Super Admin</button>
+                <button class="tab__button" onclick="showDashboard('distributor')">Distributor</button>
+                <button class="tab__button" onclick="showDashboard('retailer')">Retailer</button>
+            </div>
+            <div class="dashboard__content">
+                <div id="superadmin-dashboard" class="dashboard__panel dashboard__panel--active">
+                    <div class="dashboard__widgets">
+                        <div class="widget">
+                            <h4>Total Users</h4>
+                            <div class="widget__value">10,247</div>
+                            <div class="widget__trend">+12% this month</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Monthly Revenue</h4>
+                            <div class="widget__value">₹2.4 Cr</div>
+                            <div class="widget__trend">+8% this month</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Travel Bookings</h4>
+                            <div class="widget__value">15,240</div>
+                            <div class="widget__trend">+25% this month</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Loan Applications</h4>
+                            <div class="widget__value">2,850</div>
+                            <div class="widget__trend">+18% this month</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Insurance Policies</h4>
+                            <div class="widget__value">1,960</div>
+                            <div class="widget__trend">+22% this month</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Success Rate</h4>
+                            <div class="widget__value">99.2%</div>
+                            <div class="widget__trend">+0.3% this month</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="distributor-dashboard" class="dashboard__panel">
+                    <div class="dashboard__widgets">
+                        <div class="widget">
+                            <h4>Wallet Balance</h4>
+                            <div class="widget__value">₹45,000</div>
+                            <div class="widget__action">
+                                <button class="btn btn--sm btn--primary">Add Money</button>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h4>Multi-Service Earnings</h4>
+                            <div class="widget__value">₹4,250</div>
+                            <div class="widget__trend">Today's total earnings</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Service Categories</h4>
+                            <div class="widget__services">
+                                <button class="service__btn">Financial Services</button>
+                                <button class="service__btn">Travel Bookings</button>
+                                <button class="service__btn">Lending</button>
+                                <button class="service__btn">Insurance</button>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h4>Active Retailers</h4>
+                            <div class="widget__value">124</div>
+                            <div class="widget__action">
+                                <button class="btn btn--sm btn--outline">Manage</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="retailer-dashboard" class="dashboard__panel">
+                    <div class="dashboard__widgets">
+                        <div class="widget">
+                            <h4>Available Balance</h4>
+                            <div class="widget__value">₹8,500</div>
+                            <div class="widget__action">
+                                <button class="btn btn--sm btn--primary">Request Credit</button>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h4>Today's Commission</h4>
+                            <div class="widget__value">₹680</div>
+                            <div class="widget__trend">From all services</div>
+                        </div>
+                        <div class="widget">
+                            <h4>Financial Services</h4>
+                            <div class="widget__services">
+                                <button class="service__btn">Mobile Recharge</button>
+                                <button class="service__btn">Bill Payment</button>
+                                <button class="service__btn">Money Transfer</button>
+                            </div>
+                        </div>
+                        <div class="widget">
+                            <h4>Travel & Others</h4>
+                            <div class="widget__services">
+                                <button class="service__btn">Flight Booking</button>
+                                <button class="service__btn">Train Booking</button>
+                                <button class="service__btn">Insurance</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__content">
+                <div class="about__text">
+                    <h2 class="section__title">About Cash Money</h2>
+                    <p>Founded in 2024, Cash Money has emerged as India's leading comprehensive fintech solution provider, empowering businesses across the country with digital financial services, travel bookings, lending solutions, and insurance services.</p>
+                    <p>Our platform serves over 10,000 active users, processing monthly transactions worth ₹100+ crores across 14+ services in 4 major categories with 99.9% uptime reliability. We specialize in creating scalable multi-service fintech solutions that bridge the gap between traditional services and modern digital requirements.</p>
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <strong>Mission:</strong> To democratize comprehensive financial, travel, and insurance services making them accessible to every business across India
+                        </div>
+                        <div class="highlight">
+                            <strong>Vision:</strong> To become India's most trusted multi-service fintech infrastructure provider
+                        </div>
+                    </div>
+                </div>
+                <div class="about__stats">
+                    <div class="stat__card">
+                        <h3>14+</h3>
+                        <p>Services</p>
+                    </div>
+                    <div class="stat__card">
+                        <h3>₹100+ Cr</h3>
+                        <p>Monthly Volume</p>
+                    </div>
+                    <div class="stat__card">
+                        <h3>4</h3>
+                        <p>Service Categories</p>
+                    </div>
+                    <div class="stat__card">
+                        <h3>24/7</h3>
+                        <p>Multi-Service Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Ready to start your comprehensive fintech journey? Contact us today!</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__icon">📧</div>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>support@mycashmoney.in</p>
+                            <p>business@mycashmoney.in</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">📞</div>
+                        <div>
+                            <h4>Phone Support</h4>
+                            <p>+91 9876543210</p>
+                            <p>Available 24/7 for all services</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">🏢</div>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>Cash Money Fintech Pvt. Ltd.</p>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number *</label>
+                        <input type="tel" class="form-control" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Service Interest *</label>
+                        <select class="form-control" name="service" required>
+                            <option value="">Select Service Category</option>
+                            <option value="Financial Services">Financial Services</option>
+                            <option value="Travel Services">Travel & Booking Services</option>
+                            <option value="Lending Services">Lending Services</option>
+                            <option value="Insurance Services">Insurance Services</option>
+                            <option value="All Services">All Service Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message *</label>
+                        <textarea class="form-control" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Cash Money</h3>
+                    <p>Your comprehensive fintech partner providing digital financial services, travel bookings, lending solutions, and insurance services across India.</p>
+                    <div class="footer__certifications">
+                        <span class="cert">🏛️ RBI Compliant</span>
+                        <span class="cert">🚂 IRCTC Partner</span>
+                        <span class="cert">🛡️ Insurance Authorized</span>
+                        <span class="cert">🔒 SSL Secured</span>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#travel-services">Travel & Bookings</a></li>
+                        <li><a href="#lending-services">Lending</a></li>
+                        <li><a href="#insurance-services">Insurance</a></li>
+                        <li><a href="#user-roles">User Roles</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Financial Services</h4>
+                    <ul>
+                        <li><a href="#services">Mobile Recharge</a></li>
+                        <li><a href="#services">BBPS Bill Payment</a></li>
+                        <li><a href="#services">DMT Money Transfer</a></li>
+                        <li><a href="#services">AEPS Services</a></li>
+                        <li><a href="#services">UPI Collection</a></li>
+                        <li><a href="#services">Payout Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Travel & Others</h4>
+                    <ul>
+                        <li><a href="#travel-services">Flight Booking</a></li>
+                        <li><a href="#travel-services">Train Booking</a></li>
+                        <li><a href="#travel-services">Bus Booking</a></li>
+                        <li><a href="#lending-services">Personal Loans</a></li>
+                        <li><a href="#lending-services">Business Loans</a></li>
+                        <li><a href="#insurance-services">Insurance Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Legal & Support</h4>
+                    <ul>
+                        <li><a href="#" onclick="showModal('privacyModal')">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showModal('termsModal')">Terms & Conditions</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Cash Money Fintech Pvt. Ltd. All rights reserved.</p>
+                <p>Website: <a href="https://www.mycashmoney.in" target="_blank">www.mycashmoney.in</a> | 14+ Services across 4 Categories</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal hidden">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Multi-Service RBI Compliant Registration</h2>
+                <button class="modal__close" onclick="hideModal('registrationModal')">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="registration__steps">
+                    <div class="step step--active" onclick="goToStep(1)">
+                        <span class="step__number">1</span>
+                        <span class="step__title">Basic Information</span>
+                    </div>
+                    <div class="step" onclick="goToStep(2)">
+                        <span class="step__number">2</span>
+                        <span class="step__title">Business Details & Services</span>
+                    </div>
+                    <div class="step" onclick="goToStep(3)">
+                        <span class="step__number">3</span>
+                        <span class="step__title">KYC Documents</span>
+                    </div>
+                    <div class="step" onclick="goToStep(4)">
+                        <span class="step__number">4</span>
+                        <span class="step__title">Service Verification</span>
+                    </div>
+                    <div class="step" onclick="goToStep(5)">
+                        <span class="step__number">5</span>
+                        <span class="step__title">Approval</span>
+                    </div>
+                </div>
+                <div id="registrationContent">
+                    <!-- Step 1: Basic Information -->
+                    <div id="step1" class="registration__step registration__step--active">
+                        <h3>Basic Information</h3>
+                        <form onsubmit="nextStep(event, 2)">
+                            <div class="form-group">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Mobile Number *</label>
+                                <input type="tel" class="form-control" name="mobile" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Create Password *</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <div class="password-strength">
+                                    <div class="strength-bar"></div>
+                                    <span class="strength-text">Password strength</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" onclick="showModal('termsModal')">Terms and Conditions</a>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" onclick="showModal('privacyModal')">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Verify Mobile & Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Login to Your Multi-Service Account</h2>
+                <button class="modal__close" onclick="hideModal('loginModal')">&times;</button>
+            </div>
+            <div class="modal__body">
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label class="form-label">Email/Mobile Number</label>
+                        <input type="text" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" name="remember">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Login</button>
+                </form>
+                <div class="modal__footer">
+                    <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
+                    <span>•</span>
+                    <a href="#" onclick="showRegistrationModal()">Create New Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal hidden">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Privacy Policy</h2>
+                <button class="modal__close" onclick="hideModal('privacyModal')">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="legal__content">
+                    <p><strong>Last updated:</strong> September 29, 2024</p>
+                    <h3>1. Information We Collect</h3>
+                    <p>We collect personal information including name, email, phone number, address, and KYC documents as required by RBI guidelines, IRCTC regulations, and insurance compliance requirements.</p>
+                    <h3>2. How We Use Your Information</h3>
+                    <p>Your information is used for account verification, transaction processing across all service categories, customer support, and compliance with regulatory requirements for financial, travel, lending, and insurance services.</p>
+                    <h3>3. Data Security</h3>
+                    <p>We implement industry-standard security measures including 256-bit SSL encryption to protect your personal and financial information across all our service verticals.</p>
+                    <h3>4. Information Sharing</h3>
+                    <p>We do not share your personal information with third parties except as required by law or for transaction processing with our verified service partners (IRCTC, lending partners, insurance companies).</p>
+                    <h3>5. Service-Specific Data Usage</h3>
+                    <p>Travel bookings require sharing data with IRCTC and airline partners, loan applications with RBI-regulated lending partners, and insurance applications with registered insurance companies.</p>
+                    <h3>6. Contact Us</h3>
+                    <p>For privacy-related queries, contact us at privacy@mycashmoney.in</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="modal hidden">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2>Terms & Conditions</h2>
+                <button class="modal__close" onclick="hideModal('termsModal')">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div class="legal__content">
+                    <p><strong>Last updated:</strong> September 29, 2024</p>
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By using our services, you agree to comply with and be bound by these terms and conditions for all service categories: financial services, travel bookings, lending services, and insurance services.</p>
+                    <h3>2. Multi-Service Description</h3>
+                    <p>Cash Money provides comprehensive fintech services including mobile recharge, bill payments, money transfer, travel bookings (air/train/bus tickets), lending solutions, and insurance services through verified partners.</p>
+                    <h3>3. User Responsibilities</h3>
+                    <p>Users must provide accurate information, maintain account security, and comply with all applicable laws and regulations for financial, travel, lending, and insurance transactions.</p>
+                    <h3>4. Service-Specific Terms</h3>
+                    <p>Travel bookings are subject to IRCTC and airline terms. Loan applications are processed by RBI-regulated lending partners. Insurance policies are issued by registered insurance companies. All transactions are subject to verification.</p>
+                    <h3>5. Transaction Terms</h3>
+                    <p>All transactions across service categories are subject to verification and may be declined for security reasons. Service-specific charges apply as per published fee structures.</p>
+                    <h3>6. Limitation of Liability</h3>
+                    <p>Our liability is limited to the transaction amount. We are not responsible for indirect or consequential damages. Service partner terms also apply for travel, lending, and insurance services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

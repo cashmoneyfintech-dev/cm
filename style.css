@@ -1,3 +1,85 @@
+/* Professional UI Enhancements */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  padding: 16px 0;
+}
+
+.nav__brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav__link {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: var(--radius-base);
+  transition: background 0.2s;
+}
+.nav__link:hover {
+  background: var(--color-secondary);
+}
+
+.btn {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  border-radius: var(--radius-base);
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+.btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-base);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-card-border);
+}
+
+.hero__title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+.hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
 /* Logo image styling for header */
 .nav__logo-img {
   height: 48px;

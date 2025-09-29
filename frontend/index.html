@@ -1,0 +1,59 @@
+<!-- ...existing code from /workspaces/cm/index.html... -->
+
+<!-- Simple API Demo UI -->
+<section style="margin: 32px 0; padding: 24px; background: #f9f9f9; border-radius: 8px; max-width: 400px;">
+	<h2>API Demo</h2>
+	<form id="loginForm" style="margin-bottom: 16px;">
+		<input type="text" id="username" placeholder="Username" required style="margin-bottom:8px;width:100%;padding:8px;">
+		<input type="password" id="password" placeholder="Password" required style="margin-bottom:8px;width:100%;padding:8px;">
+		<button type="submit" style="width:100%;padding:8px;">Login</button>
+	</form>
+	<button id="userInfoBtn" style="width:100%;padding:8px;">Get User Info</button>
+	<div id="apiResult" style="margin-top:16px;color:#333;"></div>
+</section>
+
+<script>
+// Attach login form handler
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+	e.preventDefault();
+	const username = document.getElementById('username').value;
+	const password = document.getElementById('password').value;
+	login(username, password);
+});
+
+// Attach user info button handler
+document.getElementById('userInfoBtn').addEventListener('click', function() {
+	getUserInfo();
+});
+
+// Override login and getUserInfo to show results in the page
+function login(username, password) {
+	fetch('/api/login', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ username, password })
+	})
+	.then(res => res.json())
+	.then(data => {
+		if (data.token) {
+			localStorage.setItem('token', data.token);
+			showResult('Login successful!');
+		} else {
+			showResult('Login failed: ' + (data.error || 'Unknown error'));
+		}
+	});
+}
+
+function getUserInfo() {
+	const token = localStorage.getItem('token');
+	fetch('/api/me', {
+		headers: { 'Authorization': 'Bearer ' + token }
+	})
+		.then(res => res.json())
+		.then(data => showResult(JSON.stringify(data)));
+}
+
+function showResult(msg) {
+	document.getElementById('apiResult').textContent = msg;
+}
+</script>

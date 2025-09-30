@@ -15,6 +15,13 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 
 // Health check
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the CashMoneyFintech API backend!');
+});
+
+// Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'API is running!' });
 });
@@ -70,5 +77,5 @@ app.get('/api/items', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Advanced API server running on port ${PORT}`);
+  console.log(`Backend server running on port ${PORT}`);
 });
